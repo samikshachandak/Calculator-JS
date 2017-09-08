@@ -1,0 +1,54 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+<div id="calculator">
+<div>
+<form id="myForm">
+<input type="text" class="form-control" id="screen">
+</form>
+</div>
+<br/>
+<div class="container">
+<button type="button" class="btn btn-default" onclick="clearinput()">C</button>
+<button type="button" class="btn btn-default" onclick="deleteLastNumber()"><-</button>
+</div>
+<br/>
+<div class="containers">
+	<button type="button" class="btn btn-danger" value="7" onclick="onNumberClick(7)">7</button>
+	<button type="button" class="btn btn-danger" value="8" onclick="onNumberClick(8)">8</button>
+	<button type="button" class="btn btn-danger" value="9" onclick="onNumberClick(9)">9</button>
+	<button type="button" class="btn btn-danger" value="+" onclick="onOperatorClick('+')">+</button>
+	<br/>
+	<br/>
+	<button value="4" type="button" class="btn btn-danger" onclick="onNumberClick(4)">4</button>
+	<button value="5" type="button" class="btn btn-danger" onclick="onNumberClick(5)">5</button>
+	<button value="6" type="button" class="btn btn-danger" onclick="onNumberClick(6)">6</button>
+	<button value="-" type="button" class="btn btn-danger" onclick="onOperatorClick('-')">-</button>
+	<br/>
+	<br/>
+	<button value="1" type="button" class="btn btn-danger" onclick="onNumberClick(1)">1</button>
+	<button value="2" type="button" class="btn btn-danger" onclick="onNumberClick(2)">2</button>
+	<button value="3" type="button" class="btn btn-danger" onclick="onNumberClick(3)">3</button>
+	<button value="/" type="button" class="btn btn-danger"onclick="onOperatorClick('/')">/</button>
+	<br/>
+	<br/>
+	<button value="0" type="button" class="btn btn-danger" onclick="onNumberClick(0)">0</button>
+	<button value="." type="button" class="btn btn-danger" onclick="onDecimalClick('.')">.</button>
+	<button value="multiply" type="button" class="btn btn-danger" onclick="onOperatorClick('*')">* </button> 
+	<button value="=" type="button" class="btn btn-warning" onclick="performOperation()">=</button>
+</div>
+</div>
+</body>
+</html>
